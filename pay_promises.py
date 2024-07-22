@@ -1,3 +1,10 @@
+"""
+
+SCRIPT pay_promises
+CLASE PROMESAS DE PAGO CON LOGICA PARA LA IMPLEMENTACION DE FECHAS Y AÑOS
+
+"""
+
 import datetime
 
 
