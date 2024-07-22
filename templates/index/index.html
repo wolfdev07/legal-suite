@@ -1,9 +1,15 @@
 {% extends "layout.html" %}
 
 {% block content %}
+    <div class="row mt-2">
+        <h4>Inicio</h4>
+    </div>
     <div class="row">
         <div class="col-6">
             <form action="" method="post" class="card mt-5">
+                <div class="card-header">
+                    <h4>Generador de Pagarés</h4>
+                </div>
                 <div class="card-body form-control">
                     {% include "index/components/_nav_tabs.html" %}
                     {% from "index/components/_formhelpers.html" import render_field %}
