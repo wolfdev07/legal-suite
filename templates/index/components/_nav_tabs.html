@@ -1,0 +1,28 @@
+<nav class="mt-3">
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Arrendador</button>
+        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Arrendatario</button>
+        <button class="nav-link" id="nav-lease-data-tab" data-bs-toggle="tab" data-bs-target="#nav-lease-data" type="button" role="tab" aria-controls="nav-lease-data" aria-selected="false">Arrendamiento</button>
+    </div>
+</nav>
+
+{% from "index/components/_formhelpers.html" import render_field %}
+<div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+        {{ render_field(form.lessor_name) }}
+        {{ render_field(form.lessor_address) }}
+    </div>
+    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+        {{ render_field(form.tenant_name) }}
+        {{ render_field(form.tenant_address) }}
+        {{ render_field(form.jointly_obligated_name) }}
+        {{ render_field(form.jointly_obligated_address) }}
+    </div>
+    <div class="tab-pane fade" id="nav-lease-data" role="tabpanel" aria-labelledby="nav-lease-data-tab" tabindex="0">
+        {{ render_field(form.amount_rent) }}
+        {{ render_field(form.amount_rent_letter) }}
+        {{ render_field(form.signature_date) }}
+        {{ render_field(form.date_promise) }}
+        {{ render_field(form.municipality) }}
+    </div>
+</div>
