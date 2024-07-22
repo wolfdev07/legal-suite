@@ -8,8 +8,11 @@ itsdangerous==2.2.0
 Jinja2==3.1.4
 lxml==5.2.2
 MarkupSafe==2.1.5
+plum-dispatch==1.7.4
+PyPDF2==3.0.1
 python-docx==1.1.2
 six==1.16.0
+Spire.Doc==12.7.1
 typing_extensions==4.12.2
 Werkzeug==3.0.3
 WTForms==3.1.2
