@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    {% from "index/components/_formhelpers.html" import render_field %}
+    <form method=post>
+        <dl>
+            {{ render_field(form.lessor_name) }}
+            {{ render_field(form.lessor_address) }}
+            {{ render_field(form.amount_rent) }}
+            {{ render_field(form.amount_rent_letter) }}
+            {{ render_field(form.tenant_name) }}
+            {{ render_field(form.tenant_address) }}
+            {{ render_field(form.jointly_obligated_name) }}
+            {{ render_field(form.jointly_obligated_address) }}
+            {{ render_field(form.signature_date) }}
+            {{ render_field(form.date_promise) }}
+            {{ render_field(form.municipality) }}
+        </dl>
+        <p><input type=submit value=Crear>
+    </form>
+{% endblock content %}
