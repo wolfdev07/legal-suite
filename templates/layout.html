@@ -9,7 +9,8 @@
     {% endblock css %}
 </head>
 <body>
-    <section id="main">
+    {% include "components/navigator.html" %}
+    <section class="container" id="main">
         {% block content %}
         {% endblock content %}
     </section>
